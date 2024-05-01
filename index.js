@@ -19,6 +19,11 @@ async function run(model, input) {
 }
 
 // Route handler for processing requests with input through query parameters
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello, user I am Your AI Girlfriend' });
+});
+
+// Route handler for processing requests with input through query parameters
 app.get('/request', async (req, res) => {
   try {
     const { model } = req.query; // Extracting model from query parameters

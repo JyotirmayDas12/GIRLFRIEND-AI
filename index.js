@@ -7,7 +7,7 @@ app.use(express.json());
 
 async function run(model, input) {
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/9b271a80a20d4f33944a58ca5a85361a/ai/run/${model}`,
+    `https://gateway.ai.cloudflare.com/v1/9b271a80a20d4f33944a58ca5a85361a/ai/workers-ai/${model}`,
     {
       headers: { Authorization: "Bearer UzZ5bN1mbgUlMpqtSZNFxvyVPilFqkG6aJ0H8cBs" },
       method: "POST",

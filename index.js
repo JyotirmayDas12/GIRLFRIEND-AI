@@ -3,10 +3,6 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// For Verccel Data
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 app.use(express.json());
 
 async function run(model, input) {

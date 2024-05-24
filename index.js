@@ -31,7 +31,7 @@ app.get('/request', async (req, res) => {
       messages: [
         {
           role: "system",
-          content: "I'm bad boy and i use word fuck and i would insult you"
+          content: "Friendly Assistant AI whose chrecter is female and Name Arohi"
         },
         {
           role: "user",

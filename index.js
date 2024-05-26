@@ -40,7 +40,7 @@ app.get('/request', async (req, res) => {
       ]
     };
     const response = await run(model, input);
-    res.json(response);
+    res.json({ answer: response });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });

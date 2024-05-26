@@ -41,7 +41,7 @@ app.get('/request', async (req, res) => {
     };
     const response = await run(model, input);
     const answer = response.result.response
-    res.json(answer);
+    res.json({ answer: answer , credit: 'JYOTIRMAY DAS'});
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
